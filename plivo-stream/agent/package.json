@@ -1,0 +1,37 @@
+{
+  "name": "agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/agent.ts dev",
+    "start": "tsx src/agent.ts start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@livekit/agents": "^1.8.1",
+    "@livekit/agents-plugin-silero": "^1.8.1",
+    "@spekoai/adapter-livekit": "^0.1.5",
+    "@spekoai/sdk": "^0.5.3",
+    "dotenv": "^17.4.2",
+    "nodemailer": "^10.0.9",
+    "plivo": "^4.79.0",
+    "zod": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "@types/nodemailer": "^8.0.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3"
+  },
+  "type": "module",
+  "allowScripts": {
+    "onnxruntime-node@1.24.3": true,
+    "esbuild@0.28.2": true,
+    "@livekit/local-inference@0.2.7": true
+  }
+}
